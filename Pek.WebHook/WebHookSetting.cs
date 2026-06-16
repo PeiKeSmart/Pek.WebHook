@@ -21,4 +21,20 @@ public class WebHookSetting : Config<WebHookSetting> {
     /// <summary>企业微信机器人 Webhook 地址</summary>
     [Description("企业微信机器人 Webhook 地址")]
     public String WeChatWorkWebhookUrl { get; set; }
+
+    #region 企业微信应用消息配置
+
+    /// <summary>企业微信CorpId</summary>
+    [Description("企业微信CorpId")]
+    public String WeChatWorkCorpId { get; set; } = String.Empty;
+
+    /// <summary>企业微信应用AgentId</summary>
+    [Description("企业微信应用AgentId")]
+    public String WeChatWorkAgentId { get; set; } = String.Empty;
+
+    /// <summary>企业微信应用CorpSecret</summary>
+    [Description("企业微信应用CorpSecret")]
+    public String WeChatWorkCorpSecret { get; set; } = String.Empty;
+
+    #endregion
 }
