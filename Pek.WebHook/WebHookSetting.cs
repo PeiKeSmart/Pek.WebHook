@@ -36,5 +36,9 @@ public class WebHookSetting : Config<WebHookSetting> {
     [Description("企业微信应用CorpSecret")]
     public String WeChatWorkCorpSecret { get; set; } = String.Empty;
 
+    /// <summary>企业微信应用集合（Id/Name/Secret，Name对应应用名）</summary>
+    [Description("企业微信应用集合")]
+    public List<WeChatWorkAppConfig> WeChatWorkApps { get; set; } = [];
+
     #endregion
 }
